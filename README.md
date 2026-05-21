@@ -13,16 +13,17 @@ Cmd: This is a windows command-line interpreter that can be used to interact wit
 Ipconfig: This is a windows utility used to find information about a system’s IP, DNS, DHCP and adapter configuration.
 Netstat: Is an operating system utility that displays active TCP connections, listening ports, and network statistics. After gaining initial access, Orangeworm uses netstat to map out active TCP connections on the compromised machine, enabling them to understand the network topology. They also use netstat to cover up their tracks through a technique known as “living off the land”, which enables them to avoid triggering security alert when they upload custom scanning tools.
 DEFENSE RECOMMENDATIONS
-Use tools like OSINT monitoring platforms (e.g., SpiderFoot, Recon-ng) to identify leaked information.
-Enable DNSSEC and use WHOIS privacy protection.
-Monitor for domain hijacking or lookalike domains using services like RiskIQ or DomainTools.
-Network segmentation should be used to isolate infrastructure components that do not require broad network access to avoid free lateral movement within the network environment. Also, implement MFA across all critical systems and services to ensure robust protection against account takeover and unauthorized access.
-Use solutions such as EDR for comprehensive antivirus/antimalware protection across all systems.
-Implement centralized antivirus management consoles that provide visibility into threat activity, enable policy enforcement, and automate updates.
-Leverage solutions with advanced behavioral analysis capabilities to detect malicious activity patterns that don’t rely on known signatures.
-Enable behavior prevention on endpoint. For instance, on Windows 10, enable Attack Surface Reduction (ASR) rules to prevent an application from writing a signed vulnerable driver to the system. On Windows 10 and 11, enable Microsoft Vulnerable Driver Blocklist to assist in hardening against third party-developed service drivers.
-Ensure the authenticity and integrity of software by digitally signing executables, scripts, and other code artifacts.
-Always monitor certificate renewal automation status.
-Use of Network Intrusion Prevention System (NIPS) which helps to monitor network traffic for suspicious activity and block malicious traffic.
-Use tools like AppLocker or Windows Defender Application Control (WDAC) to create whitelists of authorized applications and block unauthorized ones. On Linux, use tools like SELinux or AppArmor to define mandatory access control policies for application execution.
+o	Use tools like OSINT monitoring platforms (e.g., SpiderFoot, Recon-ng) to identify leaked information.
+o	Enable DNSSEC and use WHOIS privacy protection.
+o	Monitor for domain hijacking or lookalike domains using services like RiskIQ or DomainTools.
+o	Network segmentation should be used to isolate infrastructure components that do not require broad network access to avoid free lateral movement within the network environment. Also, implement MFA across all critical systems and services to ensure robust protection against account takeover and unauthorized access.
+o	Use solutions such as EDR for comprehensive antivirus/antimalware protection across all systems.
+o	Implement centralized antivirus management consoles that provide visibility into threat activity, enable policy enforcement, and automate updates.
+o	Leverage solutions with advanced behavioral analysis capabilities to detect malicious activity patterns that don’t rely on known signatures.
+o	Enable behavior prevention on endpoint. For instance, on Windows 10, enable Attack Surface Reduction (ASR) rules to prevent an application from writing a signed vulnerable driver to the system. On Windows 10 and 11, enable Microsoft Vulnerable Driver Blocklist to assist in hardening against third party-developed service drivers.
+o	Ensure the authenticity and integrity of software by digitally signing executables, scripts, and other code artifacts.
+o	Always monitor certificate renewal automation status.
+o	Use of Network Intrusion Prevention System (NIPS) which helps to monitor network traffic for suspicious activity and block malicious traffic.
+o	Use tools like AppLocker or Windows Defender Application Control (WDAC) to create whitelists of authorized applications and block unauthorized ones. On Linux, use tools like SELinux or AppArmor to define mandatory access control policies for application execution.
+o	Train employees and contractors on recognizing, reporting, and preventing cyber threats that rely on human interaction, such as phishing, social engineering, and other manipulative techniques.
 Train employees and contractors on recognizing, reporting, and preventing cyber threats that rely on human interaction, such as phishing, social engineering, and other manipulative techniques.
